@@ -1,0 +1,31 @@
+chat:
+  end: '&7You teleported to a random location'
+  cooldown: "&cYou can't rtp for another %time%s."
+  movetimer:
+    cancelled: '&cTeleport cancelled because you moved'
+    remaining: '&7Teleporting in &c%time%s'
+
+no-permissions: "&cYou don't have permission to use this command."
+only-player: '&cYou have to be a player to use this command.'
+error: '&cAn error occurred!'
+
+gui:
+
+  title: 'ʀᴀɴᴅᴏᴍ ᴛᴇʟᴇᴘᴏʀᴛ'
+  world:
+    name: '&f&x&0&1&d&e&7&8ᴏᴠᴇʀᴡᴏʀʟᴅ'
+    lore:
+    - "&fClick to randomly teleport"
+    - ''
+
+  nether:
+    name: '&f&x&0&1&d&e&7&8ɴᴇᴛʜᴇʀ'
+    lore:
+    - "&fClick to randomly teleport"
+    - ''
+
+  end:
+    name: '&f&x&0&1&d&e&7&8ᴇɴᴅ'
+    lore:
+    - "&fClick to randomly teleport"
+    - ''
