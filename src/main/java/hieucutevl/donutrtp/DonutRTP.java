@@ -8,6 +8,7 @@ import hieucutevl.donutrtp.cmd.services.CooldownManager;
 import dev.dejvokep.boostedyaml.YamlDocument;
 import org.bstats.bukkit.Metrics;
 import hieucutevl.donutrtp.listener.OnDeath;
+import hieucutevl.donutrtp.listener.PlayerQuitListener;
 import hieucutevl.donutrtp.listener.RTPGuiListener;
 import hieucutevl.donutrtp.utils.config.ConfigManager;
 import org.bukkit.Bukkit;
@@ -112,6 +113,7 @@ public class DonutRTP extends JavaPlugin {
    private void initEvents(ConfigManager configManager) {
       this.getServer().getPluginManager().registerEvents(new OnDeath(configManager, this), this);
       this.getServer().getPluginManager().registerEvents(new RTPGuiListener(), this);
+      this.getServer().getPluginManager().registerEvents(new PlayerQuitListener(), this);
    }
 
    private void initCooldownManager(ConfigManager configManager) {
