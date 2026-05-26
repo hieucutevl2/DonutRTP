@@ -224,9 +224,9 @@ public class CMD_RTP implements CommandExecutor, TabCompleter {
       // Rate-limit: silent, max 1 reset per 10 ticks
       long currentTick = p.getWorld().getFullTime();
       Long lastTick = lastCommandTick.get(p.getUniqueId());
-      if (lastTick != null && currentTick - lastTick < 10) {
-         return;
-      }
+      long diff = lastTick != null ? currentTick - lastTick : 10;
+      if (diff < 0) diff = 10;
+      if (diff < 10) return;
       lastCommandTick.put(p.getUniqueId(), currentTick);
 
       // Bump generation — old countdown steps will see a stale generation and stop themselves
