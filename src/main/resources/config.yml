@@ -17,10 +17,10 @@ cooldown:
 movetimer:
   enabled: true
   time: 5
-  sound-canceled: ENTITY_VILLAGER_NO
+  sound-canceled: ENTITY.VILLAGER.NO
   sound-canceled-pitch: 1.0
-  sound-tick: UI_BUTTON_CLICK
-  sound-tick-pitch: 1.0
+  sound-tick: block.note_block.hat 
+  sound-tick-pitch: 1.5
 
 # Sound notification when player is teleported
 successful-tp:
@@ -29,12 +29,14 @@ successful-tp:
   end-pitch: 1.0
 
 # Auto-RTP on death
-on-death: false
+on-death: true
 
 
 
 # Advanced settings
+
 # ignore this if you don't know what you are doing
+
 force-close-inventories: true
 prevent-spam: true
 
@@ -43,4 +45,22 @@ max-tries: 25
 
 metrics: true
 
+multi-world:
+  # false to disable all kind of world
+  enabled: true
 
+  world:
+    enabled: true
+    worlds:
+      - "world:13"
+      # - "Asia:4"
+
+  nether:
+    enabled: false
+    worlds:
+      - "world_nether:13"
+
+  end:
+    enabled: false
+    worlds:
+      - "world_the_end:13"
