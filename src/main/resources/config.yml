@@ -1,0 +1,66 @@
+# Available: [en,vn]
+# you can add more languages or change them in messages
+messages: "en"
+
+# RTP area per world (radius)
+area:
+  world: 1000
+  world_nether: 1000
+  world_the_end: 1000
+
+# Cooldown time
+cooldown:
+  enabled: true
+  time: 5
+
+# Teleport delay and sound notification
+movetimer:
+  enabled: true
+  time: 5
+  sound-canceled: ENTITY.VILLAGER.NO
+  sound-canceled-pitch: 1.0
+  sound-tick: block.note_block.hat 
+  sound-tick-pitch: 1.5
+
+# Sound notification when player is teleported
+successful-tp:
+  enabled: true
+  end: entity.enderman.teleport
+  end-pitch: 1.0
+
+# Auto-RTP on death
+on-death: true
+
+
+
+# Advanced settings
+
+# ignore this if you don't know what you are doing
+
+force-close-inventories: true
+prevent-spam: true
+
+# Maximum attempts to find a safe location before failing
+max-tries: 25
+
+metrics: true
+
+multi-world:
+  # false to disable all kind of world
+  enabled: true
+
+  world:
+    enabled: true
+    worlds:
+      - "world:13"
+      # - "Asia:4"
+
+  nether:
+    enabled: false
+    worlds:
+      - "world_nether:13"
+
+  end:
+    enabled: false
+    worlds:
+      - "world_the_end:13"
