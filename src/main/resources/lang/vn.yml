@@ -15,7 +15,7 @@ gui:
   world:
     name: '&f&x&0&1&d&e&7&8ᴏᴠᴇʀᴡᴏʀʟᴅ'
     lore:
-    - "&fBấm vào để dịch chuyển ngẫu nhiên"
+    - "&fBấm vào để chọn vùng"
     - ''
 
   nether:
@@ -29,3 +29,34 @@ gui:
     lore:
     - "&fBấm vào để dịch chuyển ngẫu nhiên"
     - ''
+
+multiworld_gui:
+  world:
+    title: 'ʀᴀɴᴅᴏᴍ ᴛᴇʟᴇᴘᴏʀᴛ'
+    worlds:
+      world:
+        name: '&f&x&0&1&d&e&7&8ᴏᴠᴇʀᴡᴏʀʟᴅ'
+        lore:
+        - "&fBấm vào để dịch chuyển ngẫu nhiên"
+        - ''
+#      asia:
+#        name: '&f&x&0&1&d&e&7&8ᴏᴠᴇʀᴡᴏʀʟᴅ'
+#        lore:
+#        - "&fBấm vào để dịch chuyển ngẫu nhiên"
+#        - ''
+  nether:
+    title: 'ʀᴀɴᴅᴏᴍ ᴛᴇʟᴇᴘᴏʀᴛ'
+    worlds:
+      world_nether:
+        name: '&f&x&0&1&d&e&7&8ɴᴇᴛʜᴇʀ'
+        lore:
+        - "&fBấm vào để dịch chuyển ngẫu nhiên"
+        - ''
+  end:
+    title: 'ʀᴀɴᴅᴏᴍ ᴛᴇʟᴇᴘᴏʀᴛ'
+    worlds:
+      world_the_end:
+        name: '&f&x&0&1&d&e&7&8ᴇɴᴅ'
+        lore:
+        - "&fBấm vào để dịch chuyển ngẫu nhiên"
+        - ''
